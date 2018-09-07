@@ -45,7 +45,7 @@ class ListMobileAPI: ListMobileStoreProtocol {
         do {
           let res = try response.filterSuccessfulStatusCodes()
           if let array = try res.mapJSON() as? [[String: Any]] {
-            var list = Mapper<MobileData>().mapArray(JSONArray: array)
+            let list = Mapper<MobileData>().mapArray(JSONArray: array)
             strongSelf.mobileList = list
             completion(Result.success(strongSelf.getOrderedList(list: strongSelf.mobileList,
                                                      option: orderOption)))

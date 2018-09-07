@@ -19,6 +19,7 @@ class ListMobileViewController: UIViewController, ListMobileViewControllerInterf
   var displayMobiles: [ListMobile.FetchMobile.ViewModel.DisplayedMobile] = []
   
   @IBOutlet fileprivate var tableView: UITableView!
+  @IBOutlet fileprivate var segmentedControl: CustomSegmentedControl!
   
   // MARK: - Object lifecycle
   
@@ -56,6 +57,7 @@ class ListMobileViewController: UIViewController, ListMobileViewControllerInterf
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    segmentedControl.items = ["All", "Favourite"]
     setUpTableView()
     fetchDataOnLoad()
   }
@@ -74,6 +76,7 @@ class ListMobileViewController: UIViewController, ListMobileViewControllerInterf
   func displayMobileList(viewModels: ListMobile.FetchMobile.ViewModel) {
     self.displayMobiles = viewModels.displayMobiles
     self.tableView.reloadData()
+    self.tableView.tableFooterView = UIView(frame: CGRect.zero)
   }
   
   // MARK: - Router

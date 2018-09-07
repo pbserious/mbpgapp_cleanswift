@@ -35,16 +35,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gih-lE-l5M">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwe-WF-8eI" customClass="CustomSegmentedControl" customModule="mbpg_cleanswift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIY-MK-I5U">
+                                        <rect key="frame" x="0.0" y="57" width="375" height="3"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="eWo-Q7-YP9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tIY-MK-I5U" secondAttribute="bottom" id="2JY-7l-Q4K"/>
+                                    <constraint firstAttribute="height" constant="60" id="mKt-cK-i9S"/>
+                                    <constraint firstAttribute="trailing" secondItem="tIY-MK-I5U" secondAttribute="trailing" id="q3C-Ik-XQY"/>
+                                    <constraint firstItem="tIY-MK-I5U" firstAttribute="leading" secondItem="uwe-WF-8eI" secondAttribute="leading" id="yQt-Bc-Caa"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="uwe-WF-8eI" firstAttribute="top" secondItem="7C9-ZK-7Rk" secondAttribute="top" id="4Z6-Lw-wao"/>
                             <constraint firstItem="gih-lE-l5M" firstAttribute="leading" secondItem="7C9-ZK-7Rk" secondAttribute="leading" id="6el-HI-BuJ"/>
+                            <constraint firstItem="gih-lE-l5M" firstAttribute="top" secondItem="uwe-WF-8eI" secondAttribute="bottom" id="EQh-Ff-HMS"/>
                             <constraint firstItem="gih-lE-l5M" firstAttribute="trailing" secondItem="7C9-ZK-7Rk" secondAttribute="trailing" id="OiT-Ny-hbg"/>
-                            <constraint firstItem="gih-lE-l5M" firstAttribute="top" secondItem="LjJ-i6-28C" secondAttribute="top" id="iuF-Q2-Hkv"/>
                             <constraint firstItem="gih-lE-l5M" firstAttribute="bottom" secondItem="7C9-ZK-7Rk" secondAttribute="bottom" id="kDB-l9-uKi"/>
+                            <constraint firstItem="uwe-WF-8eI" firstAttribute="trailing" secondItem="7C9-ZK-7Rk" secondAttribute="trailing" id="tgH-JX-lO6"/>
+                            <constraint firstItem="uwe-WF-8eI" firstAttribute="leading" secondItem="7C9-ZK-7Rk" secondAttribute="leading" id="wE3-08-fBj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7C9-ZK-7Rk"/>
                     </view>
@@ -56,6 +78,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="segmentedControl" destination="uwe-WF-8eI" id="a7U-wj-D0a"/>
                         <outlet property="tableView" destination="gih-lE-l5M" id="HJ0-G4-ROs"/>
                     </connections>
                 </viewController>
