@@ -60,7 +60,7 @@
                         </constraints>
                         <state key="normal" image="ic_unfav"/>
                         <connections>
-                            <action selector="favouritePressed" destination="N9K-66-9Lk" eventType="touchUpInside" id="eGf-3N-J3A"/>
+                            <action selector="favouritePressed" destination="N9K-66-9Lk" eventType="touchUpInside" id="rSs-6u-Tu1"/>
                         </connections>
                     </button>
                 </subviews>

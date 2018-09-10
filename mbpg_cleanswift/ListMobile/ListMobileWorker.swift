@@ -22,9 +22,31 @@ class ListMobileWorker {
 
   // MARK: - Business Logic
   
-  func fetchMobiles(_ orderOption: ListMobile.FetchMobile.Request.OrderOption, completion: @escaping (Result<[MobileData]>) -> Void) {
+  func fetchMobiles(_ request: ListMobile.FetchMobile.Request, completion: @escaping (Result<[MobileData]>) -> Void) {
+    let orderOption = request.order
     store.fetchMobiles(orderOption) { result in
-      completion(result)
+      switch result {
+      // Stub the worker
+      case .success(let list):
+        let updatedList = list.compactMap({ data -> MobileData? in
+          let favWorker = FavouriteWorker()
+          var newData = data
+          newData.isFavourite = favWorker.isFavourite(for: data.id)
+          
+          switch request.filter {
+          case .favourite:
+            if request.filter == .favourite && !newData.isFavourite {
+              return nil
+            }
+          default:
+            break
+          }
+          return newData
+        })
+        completion(Result<[MobileData]>.success(updatedList))
+      default:
+        completion(result)
+      }
     }
   }
 }

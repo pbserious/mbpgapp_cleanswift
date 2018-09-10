@@ -16,6 +16,7 @@ protocol FavouriteWorkerProtocol {
   func favouriteMobile(for id:Int)
   func unfavouriteMobile(for id:Int)
   func isFavourite(for id:Int) -> Bool
+  func toggleFavourite(for id:Int)
 }
 
 extension FavouriteWorkerProtocol {
@@ -59,6 +60,14 @@ class FavouriteWorker: FavouriteWorkerProtocol {
   
   func updateFavouriteArray(_ arr:[Int]) {
     UserDefaults.standard.set(arr, forKey: FAV_ARRAY_KEY)
+  }
+  
+  func toggleFavourite(for id: Int) {
+    if isFavourite(for: id) {
+      unfavouriteMobile(for: id)
+    } else {
+      favouriteMobile(for: id)
+    }
   }
   
 }

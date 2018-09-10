@@ -30,7 +30,12 @@ struct ListMobile {
           }
         }
       }
-      var order: OrderOption
+      enum FilterOption {
+        case all
+        case favourite
+      }
+      var filter: FilterOption
+      var order: OrderOption      
     }
     struct Response {
       var mobiles: [MobileData]
@@ -45,8 +50,20 @@ struct ListMobile {
         var rating: String
         var description: String
         var thumbUrl: URL?
+        var isFavourite: Bool
       }
       var displayMobiles: [DisplayedMobile]
+    }
+  }
+  
+  struct Favourite {
+    struct Request {
+      var id: Int
+    }
+    struct Response {
+      
+    }
+    struct ViewModel {
     }
   }
 }

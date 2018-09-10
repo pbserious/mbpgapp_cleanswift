@@ -9,6 +9,10 @@
 import UIKit
 import Kingfisher
 
+protocol MobileListCellProtocol {
+  func favouriteDidTapped(id:Int)
+}
+
 class MobileListCell: UITableViewCell {
   
   static let nibName: String = String(describing: MobileListCell.self)
@@ -21,23 +25,36 @@ class MobileListCell: UITableViewCell {
   @IBOutlet fileprivate weak var favouriteButton: UIButton!
   @IBOutlet fileprivate weak var thumbImageView: UIImageView!
   
+  private var delegate: MobileListCellProtocol?
+  private var displayedMobile: ListMobile.FetchMobile.ViewModel.DisplayedMobile?
+  
   @IBAction func favouritePressed() {
-    //vm.toggleFavourite()
-    updateFavouriteButton()
+    guard let dm = displayedMobile else { return }
+    delegate?.favouriteDidTapped(id: dm.id)
+    
   }
   
-  func set(displayedMobile: ListMobile.FetchMobile.ViewModel.DisplayedMobile) {
+  func set(filterOption: ListMobile.FetchMobile.Request.FilterOption,
+           delegate: MobileListCellProtocol,
+           displayedMobile: ListMobile.FetchMobile.ViewModel.DisplayedMobile) {
+    self.delegate = delegate
+    self.displayedMobile = displayedMobile
+    
     nameLabel.text = displayedMobile.name
     descriptionLabel.text = displayedMobile.description
     priceLabel.text = displayedMobile.price
     ratingLabel.text = displayedMobile.rating
     thumbImageView.kf.setImage(with: displayedMobile.thumbUrl, placeholder: #imageLiteral(resourceName: "ph_default"))
-  }
-  
-  
-  func updateFavouriteButton() {
-//    let favStateImage =  vm.isFavourite ? #imageLiteral(resourceName: " ic_fav") : #imageLiteral(resourceName: "ic_unfav")
-//    favouriteButton.setImage(favStateImage, for: .normal)
-//    favouriteButton.isHidden = !vm.isToggleFavouriteEnable
+    
+    let favStateImage =  displayedMobile.isFavourite ? #imageLiteral(resourceName: " ic_fav") : #imageLiteral(resourceName: "ic_unfav")
+    favouriteButton.setImage(favStateImage, for: .normal)
+    
+    switch filterOption {
+    case .all:
+      favouriteButton.isHidden = false
+    default:
+      favouriteButton.isHidden = true
+    }
+    
   }
 }

@@ -11,6 +11,8 @@ import UIKit
 protocol ListMobileInteractorInterface {
   //func doSomething(request: ListMobile.Something.Request)
   func fetchMobileList(request: ListMobile.FetchMobile.Request)
+  func favouriteToggle(request: ListMobile.Favourite.Request)
+  
   var mobileList: [MobileData] { get }
 }
 
@@ -26,7 +28,7 @@ class ListMobileInteractor: ListMobileInteractorInterface, ListMobileDataStore {
 
   // MARK: - Business logic
   func fetchMobileList(request: ListMobile.FetchMobile.Request) {
-    worker?.fetchMobiles(request.order, completion: { [weak self] result in
+    worker?.fetchMobiles(request, completion: { [weak self] result in
       guard let strongSelf = self else { return }
       switch result {
       case .success(let list):
@@ -40,5 +42,13 @@ class ListMobileInteractor: ListMobileInteractorInterface, ListMobileDataStore {
       }
       
     })
+  }
+  
+  func favouriteToggle(request: ListMobile.Favourite.Request) {
+    let favWorker = FavouriteWorker()
+    favWorker.toggleFavourite(for: request.id)
+    
+    let response = ListMobile.Favourite.Response()
+    self.presenter.presentUpdateFavourite(response: response)
   }
 }

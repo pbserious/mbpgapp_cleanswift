@@ -22,6 +22,7 @@ struct MobileData: Mappable {
     var price: Double = 0.0
     var description: String = ""
     var thumnailUrlString: String = ""
+    var isFavourite = false
     
     var thumbnailUrl: URL? {
         return URL(string: self.thumnailUrlString)
