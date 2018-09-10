@@ -13,6 +13,13 @@
 		9C277767214269AB006CA360 /* MobileListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C277765214269AA006CA360 /* MobileListCell.swift */; };
 		9C277768214269AB006CA360 /* MobileListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C277766214269AB006CA360 /* MobileListCell.xib */; };
 		9C27776B21427EDD006CA360 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27776A21427EDD006CA360 /* CustomSegmentedControl.swift */; };
+		9C27777521429197006CA360 /* MobileDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27776D21429197006CA360 /* MobileDetailStore.swift */; };
+		9C27777621429197006CA360 /* MobileDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27776E21429197006CA360 /* MobileDetailPresenter.swift */; };
+		9C27777721429197006CA360 /* MobileDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27776F21429197006CA360 /* MobileDetailWorker.swift */; };
+		9C27777821429197006CA360 /* MobileDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27777021429197006CA360 /* MobileDetailRouter.swift */; };
+		9C27777921429197006CA360 /* MobileDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27777121429197006CA360 /* MobileDetailModels.swift */; };
+		9C27777A21429197006CA360 /* MobileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27777221429197006CA360 /* MobileDetailViewController.swift */; };
+		9C27777B21429197006CA360 /* MobileDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C27777321429197006CA360 /* MobileDetailInteractor.swift */; };
 		9C529CAA2140DF09002C09C2 /* ListMobileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CA22140DF09002C09C2 /* ListMobileStore.swift */; };
 		9C529CAB2140DF09002C09C2 /* ListMobilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CA32140DF09002C09C2 /* ListMobilePresenter.swift */; };
 		9C529CAC2140DF09002C09C2 /* ListMobileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CA42140DF09002C09C2 /* ListMobileWorker.swift */; };
@@ -21,6 +28,12 @@
 		9C529CAF2140DF09002C09C2 /* ListMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CA72140DF09002C09C2 /* ListMobileViewController.swift */; };
 		9C529CB02140DF09002C09C2 /* ListMobileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CA82140DF09002C09C2 /* ListMobileInteractor.swift */; };
 		9C529CB72140ED54002C09C2 /* MobilesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CB62140ED54002C09C2 /* MobilesAPI.swift */; };
+		9C834B49214612E60016750D /* HorizontalScrollableImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C834B48214612E60016750D /* HorizontalScrollableImagesView.swift */; };
+		9C834B4D214623BE0016750D /* MobileImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C834B4B214623BE0016750D /* MobileImageCollectionCell.swift */; };
+		9C834B4E214623BE0016750D /* MobileImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C834B4C214623BE0016750D /* MobileImageCollectionCell.xib */; };
+		9C834B50214625170016750D /* MobileImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C834B4F214625170016750D /* MobileImagesResponse.swift */; };
+		9C834B5221464BF50016750D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C834B5121464BF40016750D /* UIView+Extension.swift */; };
+		9C834B5421464E1A0016750D /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C834B5321464E190016750D /* LoadingView.xib */; };
 		9CA0D09C2140D65D00B0CB46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D09B2140D65D00B0CB46 /* AppDelegate.swift */; };
 		9CA0D0A12140D65D00B0CB46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0D09F2140D65D00B0CB46 /* Main.storyboard */; };
 		9CA0D0A32140D65E00B0CB46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0D0A22140D65E00B0CB46 /* Assets.xcassets */; };
@@ -50,6 +63,13 @@
 		9C277765214269AA006CA360 /* MobileListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileListCell.swift; sourceTree = "<group>"; };
 		9C277766214269AB006CA360 /* MobileListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileListCell.xib; sourceTree = "<group>"; };
 		9C27776A21427EDD006CA360 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		9C27776D21429197006CA360 /* MobileDetailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailStore.swift; sourceTree = "<group>"; };
+		9C27776E21429197006CA360 /* MobileDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailPresenter.swift; sourceTree = "<group>"; };
+		9C27776F21429197006CA360 /* MobileDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailWorker.swift; sourceTree = "<group>"; };
+		9C27777021429197006CA360 /* MobileDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailRouter.swift; sourceTree = "<group>"; };
+		9C27777121429197006CA360 /* MobileDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailModels.swift; sourceTree = "<group>"; };
+		9C27777221429197006CA360 /* MobileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailViewController.swift; sourceTree = "<group>"; };
+		9C27777321429197006CA360 /* MobileDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailInteractor.swift; sourceTree = "<group>"; };
 		9C529C9D2140DAD1002C09C2 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		9C529C9E2140DAD1002C09C2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		9C529CA22140DF09002C09C2 /* ListMobileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMobileStore.swift; sourceTree = "<group>"; };
@@ -70,6 +90,12 @@
 		9C529CBF2140F120002C09C2 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		9C529CC02140F120002C09C2 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		9C529CC12140F120002C09C2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		9C834B48214612E60016750D /* HorizontalScrollableImagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollableImagesView.swift; sourceTree = "<group>"; };
+		9C834B4B214623BE0016750D /* MobileImageCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileImageCollectionCell.swift; sourceTree = "<group>"; };
+		9C834B4C214623BE0016750D /* MobileImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileImageCollectionCell.xib; sourceTree = "<group>"; };
+		9C834B4F214625170016750D /* MobileImagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileImagesResponse.swift; sourceTree = "<group>"; };
+		9C834B5121464BF40016750D /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9C834B5321464E190016750D /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		9CA0D0982140D65D00B0CB46 /* mbpg_cleanswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbpg_cleanswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA0D09B2140D65D00B0CB46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA0D0A02140D65D00B0CB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,9 +140,27 @@
 		9C27776921427EA2006CA360 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9C834B5321464E190016750D /* LoadingView.xib */,
+				9C834B48214612E60016750D /* HorizontalScrollableImagesView.swift */,
 				9C27776A21427EDD006CA360 /* CustomSegmentedControl.swift */,
+				9C834B5121464BF40016750D /* UIView+Extension.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9C27776C2142915B006CA360 /* MobileDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9C834B4A214623AB0016750D /* Cell */,
+				9C27776D21429197006CA360 /* MobileDetailStore.swift */,
+				9C27776E21429197006CA360 /* MobileDetailPresenter.swift */,
+				9C27776F21429197006CA360 /* MobileDetailWorker.swift */,
+				9C27777021429197006CA360 /* MobileDetailRouter.swift */,
+				9C27777121429197006CA360 /* MobileDetailModels.swift */,
+				9C27777221429197006CA360 /* MobileDetailViewController.swift */,
+				9C27777321429197006CA360 /* MobileDetailInteractor.swift */,
+			);
+			path = MobileDetail;
 			sourceTree = "<group>";
 		};
 		9C529C9C2140DAD1002C09C2 /* Frameworks */ = {
@@ -159,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				9C27776021423CB7006CA360 /* MobileData.swift */,
+				9C834B4F214625170016750D /* MobileImagesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +215,15 @@
 				9C2777622142553D006CA360 /* APIError.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9C834B4A214623AB0016750D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C834B4B214623BE0016750D /* MobileImageCollectionCell.swift */,
+				9C834B4C214623BE0016750D /* MobileImageCollectionCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9CA0D08F2140D65D00B0CB46 = {
@@ -198,6 +252,7 @@
 		9CA0D09A2140D65D00B0CB46 /* mbpg_cleanswift */ = {
 			isa = PBXGroup;
 			children = (
+				9C27776C2142915B006CA360 /* MobileDetail */,
 				9C529CB22140DF12002C09C2 /* ListMobile */,
 				9CA0D09B2140D65D00B0CB46 /* AppDelegate.swift */,
 				9CA0D09F2140D65D00B0CB46 /* Main.storyboard */,
@@ -315,7 +370,9 @@
 				9CA0D0A62140D65E00B0CB46 /* LaunchScreen.storyboard in Resources */,
 				9CA0D0A32140D65E00B0CB46 /* Assets.xcassets in Resources */,
 				9CA0D0A12140D65D00B0CB46 /* Main.storyboard in Resources */,
+				9C834B5421464E1A0016750D /* LoadingView.xib in Resources */,
 				9C277768214269AB006CA360 /* MobileListCell.xib in Resources */,
+				9C834B4E214623BE0016750D /* MobileImageCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,18 +455,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C27777A21429197006CA360 /* MobileDetailViewController.swift in Sources */,
+				9C27777921429197006CA360 /* MobileDetailModels.swift in Sources */,
 				9C529CB72140ED54002C09C2 /* MobilesAPI.swift in Sources */,
 				9C529CAB2140DF09002C09C2 /* ListMobilePresenter.swift in Sources */,
 				9C529CAA2140DF09002C09C2 /* ListMobileStore.swift in Sources */,
 				9C277767214269AB006CA360 /* MobileListCell.swift in Sources */,
 				9C529CAE2140DF09002C09C2 /* ListMobileModels.swift in Sources */,
 				9C529CAF2140DF09002C09C2 /* ListMobileViewController.swift in Sources */,
+				9C834B49214612E60016750D /* HorizontalScrollableImagesView.swift in Sources */,
+				9C27777821429197006CA360 /* MobileDetailRouter.swift in Sources */,
 				9C2777632142553D006CA360 /* APIError.swift in Sources */,
 				9C529CB02140DF09002C09C2 /* ListMobileInteractor.swift in Sources */,
+				9C834B50214625170016750D /* MobileImagesResponse.swift in Sources */,
+				9C27777721429197006CA360 /* MobileDetailWorker.swift in Sources */,
+				9C27777521429197006CA360 /* MobileDetailStore.swift in Sources */,
+				9C27777B21429197006CA360 /* MobileDetailInteractor.swift in Sources */,
+				9C834B4D214623BE0016750D /* MobileImageCollectionCell.swift in Sources */,
 				9C27776B21427EDD006CA360 /* CustomSegmentedControl.swift in Sources */,
+				9C834B5221464BF50016750D /* UIView+Extension.swift in Sources */,
 				9C529CAC2140DF09002C09C2 /* ListMobileWorker.swift in Sources */,
 				9C529CAD2140DF09002C09C2 /* ListMobileRouter.swift in Sources */,
 				9C27776121423CB7006CA360 /* MobileData.swift in Sources */,
+				9C27777621429197006CA360 /* MobileDetailPresenter.swift in Sources */,
 				9CA0D09C2140D65D00B0CB46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +639,7 @@
 			baseConfigurationReference = 5EB22CBD3EFFE334B6EB042F /* Pods-mbpg_cleanswift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PN46S26NS;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -584,6 +653,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rattee.mbpg-cleanswift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,6 +664,7 @@
 			baseConfigurationReference = 91E4F90EC0D9F3FD6E188E05 /* Pods-mbpg_cleanswift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PN46S26NS;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -607,6 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rattee.mbpg-cleanswift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -18,7 +18,7 @@ class ListMobileViewController: UIViewController, ListMobileViewControllerInterf
   
   var displayMobiles: [ListMobile.FetchMobile.ViewModel.DisplayedMobile] = []
   
-  @IBOutlet fileprivate var tableView: UITableView!
+  @IBOutlet var tableView: UITableView!
   @IBOutlet fileprivate var segmentedControl: CustomSegmentedControl!
   
   // MARK: - Object lifecycle
@@ -43,6 +43,8 @@ class ListMobileViewController: UIViewController, ListMobileViewControllerInterf
     
     viewController.interactor = interactor
     viewController.router = router
+    
+    router.dataStore = interactor
   }
   
   private func setUpTableView() {
@@ -120,5 +122,7 @@ extension ListMobileViewController: UITableViewDelegate, UITableViewDataSource {
     return cell
   }
   
-  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    router.routeToMobileDetail(segue: nil)
+  }
 }

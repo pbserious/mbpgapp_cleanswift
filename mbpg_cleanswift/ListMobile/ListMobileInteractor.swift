@@ -14,7 +14,11 @@ protocol ListMobileInteractorInterface {
   var mobileList: [MobileData] { get }
 }
 
-class ListMobileInteractor: ListMobileInteractorInterface {
+protocol ListMobileDataStore {
+  var mobileList: [MobileData] { get }
+}
+
+class ListMobileInteractor: ListMobileInteractorInterface, ListMobileDataStore {
   
   var presenter: ListMobilePresenterInterface!
   var worker: ListMobileWorker?

@@ -1,27 +1,20 @@
 //
-//  ListMobileRouter.swift
+//  MobileDetailRouter.swift
 //  mbpg_cleanswift
 //
-//  Created by Rattee W. on 6/9/2561 BE.
+//  Created by Rattee W. on 7/9/2561 BE.
 //  Copyright (c) 2561 Rattee W.. All rights reserved.
 //
 
 import UIKit
 
-protocol ListMobileRouterInput {
+protocol MobileDetailRouterInput {
   func navigateToSomewhere()
-  func routeToMobileDetail(segue: UIStoryboardSegue?)
 }
 
-protocol ListMobileDataPassing
-{
-  var dataStore: ListMobileDataStore? { get }
-}
-
-class ListMobileRouter: ListMobileRouterInput, ListMobileDataPassing {
-  
-  weak var viewController: ListMobileViewController!
-  var dataStore: ListMobileDataStore?
+class MobileDetailRouter: MobileDetailRouterInput {
+  weak var viewController: MobileDetailViewController!
+  var dataStore: MobileDetailDataStore!
 
   // MARK: - Navigation
 
@@ -42,32 +35,9 @@ class ListMobileRouter: ListMobileRouterInput, ListMobileDataPassing {
     // let someWhereViewController = storyboard.instantiateInitialViewController() as! SomeWhereViewController
     // viewController.navigationController?.pushViewController(someWhereViewController, animated: true)
   }
-  
-  func navigateToMobileDetail(source: ListMobileViewController, destination: MobileDetailViewController) {
-    source.navigationController?.pushViewController(destination, animated: true)
-  }
-  
-  func routeToMobileDetail(segue: UIStoryboardSegue?) {
-    if let segue = segue {
-      let destVC = segue.destination as! MobileDetailViewController
-      var destDS = destVC.router.dataStore
-      passDataToMobileDetail(source: dataStore!, destination: &destDS!)
-    } else {
-      let destVC = viewController.storyboard?.instantiateViewController(withIdentifier: "MobileDetailViewController") as! MobileDetailViewController
-      var destDS = destVC.router.dataStore
-      passDataToMobileDetail(source: dataStore!, destination: &destDS!)
-      navigateToMobileDetail(source: viewController!, destination: destVC)
-    }
-  }
-  
 
   // MARK: - Communication
 
-  func passDataToMobileDetail(source: ListMobileDataStore, destination: inout MobileDetailDataStore) {
-    let selectedRow = viewController?.tableView.indexPathForSelectedRow?.row
-    destination.mobile = source.mobileList[selectedRow!]
-  }
-  
   func passDataToNextScene(segue: UIStoryboardSegue) {
     // NOTE: Teach the router which scenes it can communicate with
 
