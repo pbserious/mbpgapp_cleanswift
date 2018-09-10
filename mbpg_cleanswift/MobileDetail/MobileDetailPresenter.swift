@@ -34,8 +34,8 @@ class MobileDetailPresenter: MobileDetailPresenterInterface {
       MobileDetail.GetMobile.ViewModel.DisplayedMobile(id: md.id,
                                                        name: md.name,
                                                        brand: md.brand,
-                                                       price: "Rating: \(md.price)",
-                                                       rating: "Price: $\(md.rating)",
+                                                       price: "Price: $\(md.price)",
+                                                       rating: "Rating: \(md.rating)",
                                                        description: md.description,
                                                        thumbUrl: md.thumbnailUrl))
     viewController.displayMobileData(viewModel: vm)
