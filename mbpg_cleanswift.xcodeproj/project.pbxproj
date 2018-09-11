@@ -28,6 +28,7 @@
 		9C529CAF2140DF09002C09C2 /* ListMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CA72140DF09002C09C2 /* ListMobileViewController.swift */; };
 		9C529CB02140DF09002C09C2 /* ListMobileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CA82140DF09002C09C2 /* ListMobileInteractor.swift */; };
 		9C529CB72140ED54002C09C2 /* MobilesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C529CB62140ED54002C09C2 /* MobilesAPI.swift */; };
+		9C6F793421476E7E001F6840 /* ListMobileViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F793321476E7E001F6840 /* ListMobileViewControllerTests.swift */; };
 		9C834B49214612E60016750D /* HorizontalScrollableImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C834B48214612E60016750D /* HorizontalScrollableImagesView.swift */; };
 		9C834B4D214623BE0016750D /* MobileImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C834B4B214623BE0016750D /* MobileImageCollectionCell.swift */; };
 		9C834B4E214623BE0016750D /* MobileImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C834B4C214623BE0016750D /* MobileImageCollectionCell.xib */; };
@@ -39,7 +40,6 @@
 		9CA0D0A12140D65D00B0CB46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0D09F2140D65D00B0CB46 /* Main.storyboard */; };
 		9CA0D0A32140D65E00B0CB46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0D0A22140D65E00B0CB46 /* Assets.xcassets */; };
 		9CA0D0A62140D65E00B0CB46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0D0A42140D65E00B0CB46 /* LaunchScreen.storyboard */; };
-		9CA0D0B12140D65E00B0CB46 /* mbpg_cleanswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0D0B02140D65E00B0CB46 /* mbpg_cleanswiftTests.swift */; };
 		FE7C7E219EEBF84FBA7F9374 /* Pods_mbpg_cleanswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48E83829DCAB367204473A6 /* Pods_mbpg_cleanswift.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +91,8 @@
 		9C529CBF2140F120002C09C2 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		9C529CC02140F120002C09C2 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		9C529CC12140F120002C09C2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		9C6F793221476E7E001F6840 /* mbpg_cleanswiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mbpg_cleanswiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9C6F793321476E7E001F6840 /* ListMobileViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMobileViewControllerTests.swift; sourceTree = "<group>"; };
 		9C834B48214612E60016750D /* HorizontalScrollableImagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollableImagesView.swift; sourceTree = "<group>"; };
 		9C834B4B214623BE0016750D /* MobileImageCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileImageCollectionCell.swift; sourceTree = "<group>"; };
 		9C834B4C214623BE0016750D /* MobileImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileImageCollectionCell.xib; sourceTree = "<group>"; };
@@ -105,7 +107,6 @@
 		9CA0D0A52140D65E00B0CB46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CA0D0A72140D65E00B0CB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA0D0AC2140D65E00B0CB46 /* mbpg_cleanswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mbpg_cleanswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CA0D0B02140D65E00B0CB46 /* mbpg_cleanswiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbpg_cleanswiftTests.swift; sourceTree = "<group>"; };
 		9CA0D0B22140D65E00B0CB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D48E83829DCAB367204473A6 /* Pods_mbpg_cleanswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mbpg_cleanswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -219,6 +220,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		9C6F793121476E3A001F6840 /* ListMobile */ = {
+			isa = PBXGroup;
+			children = (
+				9C6F793321476E7E001F6840 /* ListMobileViewControllerTests.swift */,
+				9C6F793221476E7E001F6840 /* mbpg_cleanswiftTests-Bridging-Header.h */,
+			);
+			path = ListMobile;
+			sourceTree = "<group>";
+		};
 		9C834B4A214623AB0016750D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,7 +287,7 @@
 		9CA0D0AF2140D65E00B0CB46 /* mbpg_cleanswiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CA0D0B02140D65E00B0CB46 /* mbpg_cleanswiftTests.swift */,
+				9C6F793121476E3A001F6840 /* ListMobile */,
 				9CA0D0B22140D65E00B0CB46 /* Info.plist */,
 			);
 			path = mbpg_cleanswiftTests;
@@ -350,6 +360,7 @@
 					};
 					9CA0D0AB2140D65E00B0CB46 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = 9CA0D0972140D65D00B0CB46;
 					};
 				};
@@ -498,7 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA0D0B12140D65E00B0CB46 /* mbpg_cleanswiftTests.swift in Sources */,
+				9C6F793421476E7E001F6840 /* ListMobileViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +713,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PN46S26NS;
 				INFOPLIST_FILE = mbpg_cleanswiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -711,6 +724,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rattee.mbpg-cleanswiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mbpg_cleanswiftTests/ListMobile/mbpg_cleanswiftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbpg_cleanswift.app/mbpg_cleanswift";
@@ -723,7 +738,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PN46S26NS;
 				INFOPLIST_FILE = mbpg_cleanswiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -732,6 +749,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rattee.mbpg-cleanswiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mbpg_cleanswiftTests/ListMobile/mbpg_cleanswiftTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbpg_cleanswift.app/mbpg_cleanswift";

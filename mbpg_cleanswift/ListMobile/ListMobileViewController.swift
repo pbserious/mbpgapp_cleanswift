@@ -22,7 +22,7 @@ class ListMobileViewController: UIViewController, ListMobileViewControllerInterf
   fileprivate var currentOrder: ListMobile.FetchMobile.Request.OrderOption = .none
   
   @IBOutlet var tableView: UITableView!
-  @IBOutlet fileprivate var segmentedControl: CustomSegmentedControl!
+  @IBOutlet var segmentedControl: CustomSegmentedControl!
   
   // MARK: - Object lifecycle
   
@@ -97,11 +97,6 @@ class ListMobileViewController: UIViewController, ListMobileViewControllerInterf
   // MARK: - Router
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    router.passDataToNextScene(segue: segue)
-  }
-  
-  @IBAction func unwindToListMobileViewController(from segue: UIStoryboardSegue) {
-    print("unwind...")
     router.passDataToNextScene(segue: segue)
   }
   

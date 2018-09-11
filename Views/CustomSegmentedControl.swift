@@ -31,7 +31,8 @@ import UIKit
     
     var selectedIndex: Int = 0 {
         didSet {
-            updateSelectedItem()
+          updateSelectedItem()
+          self.sendActions(for: .valueChanged)
         }
     }
     
@@ -103,7 +104,6 @@ import UIKit
         
         if let estIndex = estIndex, estIndex != self.selectedIndex {
             self.selectedIndex = estIndex
-            self.sendActions(for: .valueChanged)
         }
         
         return false

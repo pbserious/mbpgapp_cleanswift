@@ -30,7 +30,7 @@
         <!--List Mobile View Controller-->
         <scene sceneID="RCl-8l-PUo">
             <objects>
-                <viewController id="da0-4K-NWd" customClass="ListMobileViewController" customModule="mbpg_cleanswift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListMobileViewController" id="da0-4K-NWd" customClass="ListMobileViewController" customModule="mbpg_cleanswift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LjJ-i6-28C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,12 +101,12 @@
         <!--Mobile Detail View Controller-->
         <scene sceneID="HZv-CA-bHO">
             <objects>
-                <viewController storyboardIdentifier="MobileDetailViewController" id="Fhd-Tu-uM8" customClass="MobileDetailViewController" customModule="mbpgapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobileDetailViewController" id="Fhd-Tu-uM8" customClass="MobileDetailViewController" customModule="mbpg_cleanswift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgJ-pj-fHM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3el-6D-7UJ" customClass="HorizontalScrollableImagesView" customModule="mbpgapp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3el-6D-7UJ" customClass="HorizontalScrollableImagesView" customModule="mbpg_cleanswift" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="375" height="233.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
